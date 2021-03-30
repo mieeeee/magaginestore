@@ -20,212 +20,221 @@ img {
 li {
   list-style: none;
 }
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-.sec-title {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+ 
+.section-title {
+    font-size:1.5rem;
+    margin-bottom:20px;
 }
 .btn {
-  color: #2a2a2a;
-  border: solid 1px #2a2a2a;
-  display: inline-block;
-  font-size: 0.750rem;
-  padding: 14px 36px;
-  margin-top: 30px;
+    color:#2a2a2a;
+    border:solid 1px #2a2a2a;
+    display:inline-block;
+    font-size: 0.750rem;
+    padding:14px 36px;
+    margin-top:30px;
 }
 
-/*-------------------------------------------
+/*---------------------------------------
+
 ヘッダー
--------------------------------------------*/
-#header {
-  height: 100vh;
-  background-image: url(C:\Users\tripl\Desktop\magagine-store\Mag88_files\Mag88_files\nicole-angelova-417kabtPFEU-unsplash.jpg);
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  margin-bottom: 80px;
-  position: relative;
+
+---------------------------------------*/
+
+header {
+    height:100vh;
+    background-image:url(C:/Users/tripl/Desktop/magagine-store/Mag88_files/Mag88_files/nicole-angelova-417kabtPFEU-unsplash.jpg);
+    background-size:cover;
+    margin-bottom: 80px;
+    position:relative;
 }
-#header .site-title {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+.site-title {
+    position:absolute;
+    top:30px;
+    right:30px;
+    color: #fff;
+    background-color: black 
+}
+ /*--------------------------------------
+
+section-magazine
+
+---------------------------------------*/
+
+.section-magazine {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    text-align: center;
+    margin-bottom:80px;
+}
+.magazine-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.item {
+    width:49%;
+    position:relative;
+}
+.text {
+    width: 100%;
+    max-width: 290px;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 32px;
+    margin: 0 auto;
+    position: absolute;
+    top:40%;
+    left: 0;
+    right: 0;
 }
 
-/*-------------------------------------------
-Magazine
--------------------------------------------*/
-#magazine {
-  text-align: center;
-  margin-bottom: 80px;
-}
-#magazine .flex-item {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-#magazine .flex-item .item {
-  width: 49%;
-  position: relative;
-}
-#magazine .flex-item .item .text {
-  width: 100%;
-  max-width: 290px;
-  color: #fff;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 15px 0;
-  margin: 0 auto;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-}
-#magazine .flex-item .item .title {
-  font-size: 1.25rem;
-  margin-bottom: 2px;
+/*-------------------------------------
+
+fashion
+
+-------------------------------------*/
+
+.section-fashion {
+    text-align: center;
+    height:520px;
+    background-image:url(C:/Users/tripl/Desktop/magagine-store/Mag88_files/Mag88_files/quentin-durand-3B2HDAUiNx4-unsplash.jpg);
+    background-size:cover;
+    padding-top:30px;
+    margin-bottom: 80px;
 }
 
-/*-------------------------------------------
-Fashion
--------------------------------------------*/
-#fashion {
-  height: 520px;
-  background-image: url(../img/fashion.jpg);
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 60px;
-  margin-bottom: 80px;
-}
+/*--------------------------------------
 
-/*-------------------------------------------
-Catalog & Antique
--------------------------------------------*/
-.catalog-antique {
+catalog & antique
+
+--------------------------------------*/
+
+.section-catalogantique {    
   background-color: #f5f5f5;
   padding: 60px 0;
 }
-.catalog-antique .sec-title {
+.section-title {
   margin-bottom: 40px;
 }
-.catalog-antique .flex-item {
+.flex-item {
+  max-width: 1200px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
-.catalog-antique .item {
+
+.item { 
   width: 48%;
-  text-align: center;
+  margin:0 35px;
+  text-align: center;    
+
 }
-.catalog-antique .item img {
+.item img {
   width: 100%;
 }
-.catalog-antique .item p {
+.item p {
   margin-bottom: 30px;
   text-align: left;
 }
-.catalog-antique .item p:last-child {
-  margin-bottom: 0;
+
+/*----------------------------------
+
+footer  
+
+-----------------------------------*/
+
+footer {
+    background-color: #333;
+    font-size:0.750rem;
+}
+.footer-flexitem {
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom:100px;
+    max-width:1200px;
+    margin:0 auto;
+}
+.footer-logo {
+    color: #fff;
+}
+.footer-item {
+    width:33%;
+}
+.footer-item li::before {
+    content:"-";
+    margin-right:5px;
+}
+.copyright {
+    height:60px;
+    background-color: #fff;
+    text-align: center;
+    padding:30px 0;
 }
 
-/*-------------------------------------------
-フッター
--------------------------------------------*/
-#footer {
-  background-color: #333;
-  font-size: 0.750rem;
-}
-#footer .flex-item {
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-#footer .item {
-  width: 33%;
-  line-height: 2;
-}
-#footer .item:first-child {
-  padding: 60px 0;
-}
-#footer .item li::before {
-  content: "-";
-  margin-right: 5px;
-}
-#footer .item .title {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-#footer .copyright {
-  background-color: #fff;
-  text-align: center;
-  padding: 30px 0;
-}
+/*----------------------------------------
 
-/*-------------------------------------------
-SP
--------------------------------------------*/
+レスポンシブ
+
+----------------------------------------*/
 @media screen and (max-width: 896px) {
   /*-------------------------------------------
   Magazine
   -------------------------------------------*/
-  #magazine .flex-item {
-    flex-direction: column;
-  }
-  #magazine .flex-item .item {
-    width: 100%;
-  }
-  #magazine .flex-item .item:first-child {
-    margin-bottom: 30px;
-  }
+    .magazine-items {
+        flex-direction: column;
+    }
+    .item {
+        width:100%;
+        margin: 0 auto;
+    }
+    .item:first-child {
+        margin-bottom:30px;
+    }
 
   /*-------------------------------------------
   Fashion
   -------------------------------------------*/
-  #fashion {
-    padding-top: 35px;
-    margin-bottom: 50px;
-  }
+    .section-fashion {
+        padding:35px 20px;
+        margin-bottom:50px;
+    }
+    
 
   /*-------------------------------------------
   Catalog & Antique
   -------------------------------------------*/
-  .catalog-antique {
-    padding: 30px 0;
-  }
-  .catalog-antique .flex-item {
-    flex-direction: column;
-  }
-  .catalog-antique .item {
-    width: 100%;
-  }
-  .catalog-antique .item:first-child {
-    margin-bottom: 60px;
-  }
-
+    .section-catalogantique {
+        padding:30px 20px;
+    }
+    .flex-item {
+        flex-direction: column;
+    }
+    .section-catalogantique .item {
+      width:100%;
+    }
   /*-------------------------------------------
   フッター
   -------------------------------------------*/
-  #footer .flex-item {
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  #footer .item {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  #footer .item:first-child {
-    text-align: center;
-    padding: 0;
-  }
+    .footer-flexitem {
+        flex-direction: column;
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    .footer-item {
+        width:100%;
+        margin-bottom:30px;
+    }
+    
+    .footer-item p {
+        margin-bottom:10px;
+    }
 }
+
+
+
